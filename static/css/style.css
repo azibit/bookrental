@@ -1,0 +1,6 @@
+/* YOUR CUSTOM STYLES */
+
+@font-face { font-family: Lora; src: url('fontawesome-webfont.ttf'); }
+html * {
+font-family: Lora
+}
