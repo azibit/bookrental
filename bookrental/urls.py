@@ -16,9 +16,17 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from .views import index
+from django.conf.urls import url
+from django.contrib import admin
+from django.contrib.auth import views as auth_views
+from .views import home, signup
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'index/$', index, name="index")
+    url(r'index/$', index, name="index"),
+    url(r'home/$', home, name="home"),
+    url(r'signup/$', signup, name="signup"),
+    url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
+    url(r'^logout/$', auth_views.logout, {'template_name': 'index.html'}, name='logout'),
 
 ]

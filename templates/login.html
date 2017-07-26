@@ -1,0 +1,37 @@
+{% extends 'base_before_login.html' %}
+
+
+{% block content %}
+
+<h1 align="center">Enter Login Details</h1><br>
+<div align="center" class="panel-body">
+                    <form method="post" class="form-horizontal">
+                        {% csrf_token %}
+
+                        <fieldset>
+    <div class="form-group">
+        <i class="fa fa-envelope prefix"></i>
+      <label class="col-lg-3 control-label">{{ form.username.label_tag }}</label>
+      <div class="col-lg-9">
+        {{ form.username }}
+      </div>
+    </div>
+        <br>
+    <div class="form-group">
+      <label class="col-lg-3 control-label">{{ form.password.label_tag }}</label>
+      <div class="col-lg-9">
+        {{ form.password }}
+      </div>
+    </div>
+                            <p class="bs-component">
+                            <center>
+                                <input class="btn btn-success btn-lg" type="submit" value="Login" />
+                            </center>
+                        </p>
+                        <input type="hidden" name="next" value="{{ next }}" />
+  </fieldset>
+                    </form>
+                </div>
+
+
+{% endblock %}

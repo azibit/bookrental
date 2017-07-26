@@ -1,140 +1,47 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Index Page</title>
+{% extends 'base_before_login.html' %}
 
-    <!-- Core CSS - Include with every page -->
-	    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-        <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
-        <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
-</head>
-<body>
+{% block content %}
 
-    <div class="container">
-        <br>
-        <!-- Content here -->
-        <nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
-    <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1"
-                aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-            <strong>Habizit Book Rentals</strong>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav1">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Pricing</a>
-                </li>
-                <li class="nav-item dropdown btn-group">
-                    <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
-                        <a class="dropdown-item">Action</a>
-                        <a class="dropdown-item">Another action</a>
-                        <a class="dropdown-item">Something else here</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline waves-effect waves-light">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
+<h1 align="center">Welcome to Habizit Book Rentals</h1>
+
+        <!--Section: Features v.1-->
+<section class="section feature-box">
+
+    <!--Section heading-->
+    <h1 class="section-heading">Why is it so great? v.1</h1>
+    <!--Section sescription-->
+    <p class="section-description lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+    <!--First row-->
+    <div class="row features-big">
+        <!--First column-->
+        <div class="col-md-4 mb-r">
+            <i class="fa fa-area-chart blue-text"></i>
+            <h4 class="feature-title">Analytics</h4>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
         </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-4 mb-r">
+            <i class="fa fa-book green-text"></i>
+            <h4 class="feature-title">Tutorials</h4>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+        </div>
+        <!--/Second column-->
+
+        <!--Third column-->
+        <div class="col-md-4 mb-r">
+            <i class="fa fa-coffee red-text"></i>
+            <h4 class="feature-title">Relax</h4>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+        </div>
+        <!--/Third column-->
     </div>
-</nav>
-        <h1>Welcome to Habizit Book Rentals</h1>
-        <h2>Here are a few reasons why you should read a book today</h2>
-        <div class="row">
-  <div class="col-sm-4">
-    <div class="card card-inverse card-primary mb-3 text-center">
-      <div class="card-block">
-        <h3 class="card-title">Improves Your Focus and Concentration</h3>
-        <p class="card-text">Unlike blog posts and news articles, sitting down with a book takes long periods of focus
-            and concentration, which at first is hard to do. Being fully engaged in a book involves closing off the
-            outside world and immersing yourself into the text, which over time will strengthen your attention span.</p>
+    <!--/First row-->
 
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4">
-    <div class="card card-inverse card-primary mb-3 text-center">
-      <div class="card-block">
-        <h3 class="card-title">It Improves Your Imagination</h3>
-        <p class="card-text">You are only limited by what you can imagine, and the worlds described in books,
-            as well as other peoples views and opinions, will help you expand your understanding of what is possible.
-            By reading a written description of an event or a place, your mind is responsible for creating that image
-            in your head, instead of having the image placed in front of you when you watch television.</p>
+</section>
+<!--/Section: Features v.1-->
 
-      </div>
-    </div>
-  </div>
-            <div class="col-sm-4">
-    <div class="card card-inverse card-primary mb-3 text-center">
-      <div class="card-block">
-        <h3 class="card-title">To Discover and Create Yourself</h3>
-        <p class="card-text">In his book How to Read and Why, Harold Bloom says that we should read slowly, with love,
-            openness, and with our inner ear cocked. He explains we should read to increase our wit and imagination,
-            our sense of intimacy–in short, our entire consciousness–and also to heal our pain.
-            “Until you become yourself, what benefit can you be to others.” With the endless amount of perspectives
-            and lives we can read about, books can give us an opportunity to have experiences that we haven’t had the
-            opportunity to, and still allow us to learn the life skills they entail. Books are a fast rack to creating
-            yourself.</p>
-
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-
-     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <img class="d-block img-fluid" src="{% static 'images/image1.jpg' %}" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid" src="{% static 'images/image2.jpg' %}" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid" src="{% static 'images/image3.jpg' %}" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-
-     {% block content %}
-        {% endblock %}
-
-	    <!-- Core Scripts - Include with every page -->
-	    <script src = "{% static 'js/jquery.min.js' %}"></script>
-        <script src = "{% static 'js/tether.min.js' %}"></script>
-
-	    <script src = "{% static 'js/bootstrap.min.js' %}"></script>
-        <script src = "{% static 'js/mdb.min.js' %}"></script>
-	    {% block javascript %}
-	    {% endblock %}
-
-</body>
-</html>
+{% endblock %}

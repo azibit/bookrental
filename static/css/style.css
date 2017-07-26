@@ -4,3 +4,7 @@
 html * {
 font-family: Lora
 }
+
+html,body{
+    height: 100%
+}
